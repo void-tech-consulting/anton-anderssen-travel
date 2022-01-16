@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div id="page-content">
-  HOME random test
+  HOME
 </div>
 
 <?php get_footer(); ?>

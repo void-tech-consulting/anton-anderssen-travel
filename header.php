@@ -13,13 +13,22 @@
   <?php wp_head(); ?>
 </head>
 
+
 <body>
   <div class="header-container">
     <!-- Logo -->
-    <img id="logo" src="<?php echo get_template_directory_uri(); ?>/images/black-void.png" />
+    <img id="logo" src="<?php echo get_template_directory_uri(); ?>/images/header_img.png" />
+
+    <!-- NavBar -->
+  
+    <!-- <a class="active" href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Volunteer</a>
+    <a href="#">About</a> -->
+    
 
     <!-- Navigation -->
-    <?php
+   <?php
     $args = array(
       "theme_location" => "primary",
       "menu" => "Navigation",         // Same name as menu we registered in register-settings.php

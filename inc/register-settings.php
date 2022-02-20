@@ -1,4 +1,4 @@
 <?php
 
 // Menu registration
-register_nav_menu("primary", "Navigation");
+register_nav_menu("Home", "Services", "Volunteer", "About");

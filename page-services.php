@@ -7,7 +7,7 @@
 
     <!-- Page content -->
     <div id="page-center">
-        Services page 
+        SERVICES PAGES
     </div>
 
 </div>

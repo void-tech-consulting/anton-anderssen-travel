@@ -2,9 +2,6 @@
 
 <div id="page-content">
 
-    <!-- Sidebar -->
-    <?php get_sidebar(); ?>
-
     <!-- Page content -->
     <div id="page-center">
         SERVICES PAGES!!!!!!!

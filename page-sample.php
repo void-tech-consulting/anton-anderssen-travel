@@ -7,7 +7,7 @@
 
     <!-- Page content -->
     <div id="page-center">
-        sample page
+        sample pag
     </div>
 
 </div>

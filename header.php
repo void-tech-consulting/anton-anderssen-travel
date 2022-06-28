@@ -16,7 +16,7 @@
 <body>
   <div class="header-container">
     <!-- Logo -->
-    <img id="logo" src="<?php echo get_template_directory_uri(); ?>/images/black-void.png" />
+    <img id="logo" src="<?php echo get_template_directory_uri(); ?>/images/Anton-edited.png" />
 
     <!-- Navigation -->
     <?php

@@ -116,11 +116,19 @@ select {
 .flex-column {
   display: flex;
   flex-flow: column wrap;
+  z-index:1;
 }
 
 .flex-row {
   display: flex;
   flex-direction: row; 
+  flex-wrap: wrap; 
+}
+
+.flex-left {
+  display: flex; 
+  justify-content: flex-start;
+  align-content: flex-start; 
 }
 
 .w-100 {
@@ -131,13 +139,41 @@ select {
   width: 50% 
 }
 
+.services-blue{
+  position: absolute;
+  z-index: -2;
+  width: 30%;
+  margin-top:35%;
+  margin-left: -3%; 
+  transform: rotate(5.45deg);
+} 
+
+.services-grey{
+  position: absolute;
+  z-index: -2;
+  width: 20%;
+  margin-top:60%;
+  margin-left: 48%; 
+} 
+
+.services-yellow{
+  position: absolute;
+  z-index: -2;
+  width: 40%;
+  margin-top:8%;
+  margin-left: 60%; 
+  
+} 
+
 .service_box {
   display: flex;
   flex-direction: row; 
   width:100%;
   border: 2px;
   box-sizing: border-box;
-  padding: 2%;
+  margin-bottom : 5%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
 }
 
 .image_box {
@@ -177,16 +213,77 @@ select {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   text-align: center;
-  padding-top: 3%;
-  padding-bottom: 3%;
-  padding-left: 1%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 2%;
   padding-right: 1%;
 }
 
 
 .service_title {
-  text-align: center;
-  font-family: "Times New Roman", Times, serif;
+  text-align: left;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.social-account-left{
+  display : flex;
+  flex-direction : row;
+  justify-content:  left;
+  align-content: left;
+  text-decoration-line: none;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  color: white;
+  background-color: #023047;
+  width: 90%; /* Full width */
+  padding-top: 12px; /* Some padding */ 
+  padding-right: 0px;
+  padding-left: 0px;
+  border: none;
+  border-bottom: 2px solid white; 
+  border-radius: 0px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: white;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 160.28px;
+  height: 49px;
+
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.form-container {
+  border-radius: 30px;
+  background-color: #023047;
+  padding: 3%;  
+  display: flex;
+  flex-flow: column wrap;
 }
 
 
